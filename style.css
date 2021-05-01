@@ -1,0 +1,27 @@
+body{
+    background-image: url("galaxy.png");
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.page{
+    border: 5px solid white;
+    background-color:lightblue;
+    padding:10px;
+    color: black;
+    max-width: 50%;
+    max-height: 100%;
+    margin-left: 50%;
+}
+button{
+    background-color:blue;
+    color: white;
+    border: 1px solid white;
+    padding:5px;
+    transition: background-color 1s;
+}
+button:hover{
+    background-color:darkblue;
+    color: white;
+    border: 1px solid white;
+    padding:5px;
+}
