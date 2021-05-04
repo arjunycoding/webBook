@@ -2,7 +2,10 @@ let submit = $("#submit")
 let error = $(".error")
 error.hide()
 let info = {
-    "vidya":"123"
+    "vidya" : "123",
+    "yuvaraj" : "456",
+    "adhithya" : "readMe123",
+    "arjun" : "101112"
 }
 function storeLgin(){
     let uname = $("#uname").val()
@@ -27,9 +30,11 @@ function validateForm(){
         if(key == uname && value == pwd){
             storeLgin()
             console.log('Sucsees')
+            window.location = "webBook.html"
+            break
         } else {
             error.show()
-        }
+    }
     }
 }
 function autoSubmit(){
