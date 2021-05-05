@@ -54,3 +54,43 @@ input:focus{
     width:150px;
     height:190px;
 }
+.topb:hover{
+    font-size:12px;
+    font-family:cursive,"Comic Sans MS","serif";
+    color:white;
+    background:#000000;
+    font-weight:bold;
+    word-spacing:0.3em;
+    letter-spacing:0.02em;
+    text-align:center;
+    cursor:pointer;
+}
+.topb{
+    font-size:12px;
+    border:none;
+    width:100px;
+    height:100px;
+    top:0px;
+    left:0px;
+    background-color:inherit;
+    color:white;
+    padding:0px 10px 0px 10px;
+    text-transform: uppercase;
+    word-spacing:0.3em;
+    letter-spacing:0.02em;
+    text-align:center;
+    transition-property: background-color;
+    transition-duration: 750ms;
+    font-family: Helvetica;
+}
+
+.topBar{
+    height:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:#4d4d4d;
+}
+.icon{
+    width:50px;
+}
