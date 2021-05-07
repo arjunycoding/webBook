@@ -21,3 +21,19 @@ function showHome(){
 unlock.on("click", showBadge)
 proflieBtn.on("click", showProflie)
 homeBtn.on("click", showHome)
+
+let porfilePictures = []
+console.log(porfilePictures)
+for(let i = 0; i < 7; i++){
+    porfilePictures.push(`#avatar${i}`)
+    console.log(porfilePictures)
+}
+porfilePictures.shift()
+for(let i = 0; i < 7; i++){
+    $(porfilePictures[i]).on("click", function(){
+        let image = $(this);
+        proflieBtn.html('<img src="'+ image.attr("src") +'" width="50"></br> Porfile');
+        console.log(image)
+  });
+}
+// image.attr("width", "100")
