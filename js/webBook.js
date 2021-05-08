@@ -4,6 +4,7 @@ let proflieBtn = $("#proflieBtn");
 let proflie = $("#porfile");
 let page = $("#page");
 let homeBtn = $("#homeBtn");
+let save = $("#save")
 proflie.hide()
 badge1.hide()
 function showBadge(){
@@ -17,6 +18,16 @@ function showProflie(){
 function showHome(){
     proflie.hide()
     page.show()
+}
+function saveProfilePic(){
+    localStorage.setItem("profilePicture", proflieBtn.html())
+}
+function addProfilePic(){
+    if(typeof(localStorage.getItem("profilePicture")) == 'string'){
+        proflieBtn.html(localStorage.getItem("profilePicture"))
+    } else {
+        proflieBtn.html("<img src = 'images/profile.png'/>");
+    }
 }
 unlock.on("click", showBadge)
 proflieBtn.on("click", showProflie)
@@ -36,4 +47,5 @@ for(let i = 0; i < 7; i++){
         console.log(image)
   });
 }
-// image.attr("width", "100")
+save.on("click", saveProfilePic)
+addProfilePic()
